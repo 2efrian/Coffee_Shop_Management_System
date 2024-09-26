@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="Sign_Up.css">
+</head>
+<body>
+    <header>
+        <h1>Sign Up for Coffee Shop Management System</h1>
+    </header>
+
+    <section>
+        <form id="signUpForm">
+            <label for="newUsername">Username:</label>
+            <input type="text" id="newUsername" name="newUsername" required>
+
+            <label for="newPassword">Password:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <div id="signUpResult">
+            <!-- Sign-up results will be displayed here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Coffee Shop Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="Sign_Up.js"></script>
+</body>
+</html>

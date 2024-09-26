@@ -1,0 +1,139 @@
+/* Mengatur layout agar footer tetap di bawah */
+body {
+    background-image: url(Background_2.jpg); /* Menambahkan latar belakang gambar yang ada di folder project */
+    background-position: center; /* Mengatur tata letak atau posisi latar belakang gambar */
+    background-size: cover; /* Mengatur ukuran latar belakang gambar */
+    font-family: Arial, sans-serif; /* Memberikan tampilan jenis teks yang akan digunakan pada halaman */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px; /* Mengatur padding untuk jarak yang lebih baik */
+    background-color: #333; /* Memberikan warna pada latar belakang kolom header secara keseluruhan */
+    color: #fff; /* Memberikan warna pada teks yang berada pada kolom header */
+    margin-bottom: 0px; /* Menambah margin bawah untuk memberi jarak dari elemen selanjutnya */
+}
+
+.header-icons {
+    display: flex;
+    align-items: center; /* Mengatur tata letak ikon */
+    gap: 20px; /* Mengatur jarak antar ikon satu dengan yang lain*/
+}
+
+.header-icon {
+    height: 45px; /* Tetap mempertahankan ukuran gambar */
+    cursor: pointer; /* Menambahkan pointer pada hover */
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em; /* Mengatur ukuran teks yang ada pada elemen h1 */
+}
+
+.header-clock {
+    background-color: seagreen; /*Menambahkan warna latar belakang pada tampilan fitur waktu*/
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-family: 'Roboto Mono', monospace; /*Mengubah gaya angka pada tampilan waktu*/
+    font-size: 20px; /*Mengatur ukuran dari angka tampilan fitur waktu*/
+    margin-left: 20px; /*Mengatur tata letak dari fitur waktu agar tidak terlalu ke pojok kanan kolom header*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 0.9em; /* Mengatur ukuran teks yang terdapat pada elemen p */
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+    margin-top: 0px; /* Mengatur margin-top atau margin-atas untuk memberi jarak antara section dan header */
+}
+
+.narrative {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 1.2em; /*Mengatur ukuran teks yang terdapat pada elemen narrative*/
+    color: #333; /*Menambahkan warna pada teks di elemen narrative*/
+    line-height: 1.5; /*Mengatur tata spasi antar teks satu dengan yang lain pada elemen narrative*/
+    text-align: justify; /*Letak teks menjadi rata kiri dan rata kanan*/
+    padding: 20px; /*Menambah padding untuk jarak teks dari tepi box*/
+    border: 2px solid #333; /*Menambah border di sekitar box*/
+    border-radius: 8px; /*Menambah border-radius untuk sudut yang lebih halus*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*Menambah efek bayangan untuk memberi dimensi*/
+    background: linear-gradient(90deg, yellow, gold, darkgoldenrod, burlywood, sienna, saddlebrown);
+    background-size: 600%;
+    animation: rainbowBackground 10s linear infinite; /* Penambahan animasi pada latar belakang elemen narrative dengan kombinasi warna yang terdapat pada kode background */
+}
+
+@keyframes rainbowBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #f2f2f2;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    font-size: 1.0em;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+    position: relative; /* Pastikan footer berada di relative, bukan fixed */
+}
+
+@keyframes rainbowText {
+    0% { color: yellow; }
+    16% { color: gold; }
+    33% { color: darkgoldenrod; }
+    50% { color: burlywood; }
+    66% { color: sienna; }
+    83% { color: saddlebrown; }
+    100% { color: saddlebrown; } /* Kembali ke warna dark coklat */
+}
+
+header h1, header p, .header-clock, footer p{
+    animation: rainbowText 4s linear infinite;
+    color: transparent;
+    background-size: 300%;
+    animation: rainbowText 10s linear infinite;
+    -webkit-animation: rainbowText 10s linear infinite;
+}

@@ -1,0 +1,154 @@
+body {
+    background-image: url(Background_8.jpeg);
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: rgb(194, 138, 65);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-icon {
+    height: 45px;
+    cursor: pointer;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+    animation: rainbowText 5s infinite;
+}
+
+.header-clock {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2em;
+    color: rgb(194, 138, 65);
+    animation: rainbowText 5s infinite;
+    background-color: seagreen;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 30px; /* Mengatur jarak dari pojok kanan */
+}
+
+
+h2 {
+    background-color: #ddd;
+    color:#333;
+    text-align: center;
+    margin-top: 50px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    background-color: #ddd;
+    color: #333;
+    line-height: 1.5;
+    text-align: justify;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #f2f2f2;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+
+tbody {
+    color: #333;
+}
+
+td {
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    animation: rainbowText 5s infinite;
+}
+
+footer p {
+    text-align: center;
+}
+
+@keyframes rainbowText {
+    0% { color: yellow; }
+    16% { color: gold; }
+    33% { color: darkgoldenrod; }
+    50% { color: burlywood; }
+    66% { color: sienna; }
+    83% { color: saddlebrown; }
+    100% { color: saddlebrown; }
+}
+
+@keyframes rainbowBackground {
+    0% { background-color: yellow; }
+    16% { background-color: gold; }
+    33% { background-color: darkgoldenrod; }
+    50% { background-color: burlywood; }
+    66% { background-color: sienna; }
+    83% { background-color: saddlebrown; }
+    100% { background-color: saddlebrown; }
+}
+
+h2, p, tbody, td {
+    animation: rainbowBackground 5s infinite;
+    padding: 10px;
+    border-radius: 5px;
+}

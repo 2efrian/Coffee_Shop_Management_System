@@ -1,0 +1,99 @@
+body {
+    background-image: url('Background_5.jpg');
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: goldenrod;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px; /* Mengatur padding untuk jarak yang lebih baik */
+    background-color: #333; /* Memberikan warna pada latar belakang kolom header secara keseluruhan */
+    color: #fff; /* Memberikan warna pada teks yang berada pada kolom header */
+    margin-bottom: 0px; /* Menambah margin bawah untuk memberi jarak dari elemen selanjutnya */
+}
+
+.header-icons {
+    display: flex;
+    align-items: center; /* Mengatur tata letak ikon */
+    gap: 25px; /* Mengatur jarak antar ikon satu dengan yang lain*/
+}
+
+.header-icon {
+    height: 45px; /* Tetap mempertahankan ukuran gambar */
+    cursor: pointer; /* Menambahkan pointer pada hover */
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em; /* Mengatur ukuran teks yang ada pada elemen h1 */
+}
+
+.header-clock {
+    background-color: seagreen; /*Menambahkan warna latar belakang pada tampilan fitur waktu*/
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-family: 'Roboto Mono', monospace; /*Mengubah gaya angka pada tampilan waktu*/
+    font-size: 20px; /*Mengatur ukuran dari angka tampilan fitur waktu*/
+    margin-left: 20px; /*Mengatur tata letak dari fitur waktu agar tidak terlalu ke pojok kanan kolom header*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+}
+
+h2 {
+    color: darkgoldenrod;
+    font-size: 2em;
+    border-bottom: 2px solid #3b3b3b;
+    padding-bottom: 10px;
+    animation: rainbowText 5s linear infinite;
+}
+
+p {
+    color: midnightblue;
+    font-size: 1.2em;
+}
+
+.price {
+    font-weight: bold;
+    color: #e67300;
+    font-size: 1.3em;
+}
+
+footer {
+    background-color: #3b3b3b;
+    color: white;
+    font-size: 0.85em;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    position: relative;
+}
+
+@keyframes rainbowText {
+    0% { color: yellow; }
+    16% { color: gold; }
+    33% { color: darkgoldenrod; }
+    50% { color: burlywood; }
+    66% { color: sienna; }
+    83% { color: saddlebrown; }
+    100% { color: saddlebrown; }
+}
+
+header h1, .header-clock, footer p {
+    animation: rainbowText 5s linear infinite;
+}
